@@ -1,6 +1,40 @@
 # quantum_algo_exercises
+# 1
+## 1.a
+
+### QFT
+![QFT](docs/QFT.png)
+
+### Inverse QFT
+![Inverse QFT](docs/Inverse_QFT.png)
+
+## 1.b
+![](docs/1_b.jpeg)
+
+# 2
+![](docs/pdf/1.jpg)
+![](docs/pdf/2.jpg)
+![](docs/pdf/3.jpg)
+![](docs/pdf/4.jpg)
+![](docs/pdf/5.jpg)
+![](docs/pdf/6.jpg)
+![](docs/pdf/7.jpg)
+![](docs/pdf/8.jpg)
+
+# 3
+![](docs/3.jpg)
+
+
+# 4
+## 4.a
+![](docs/4_a.jpg)
+
 ## 4.b
+### (i)
+![](docs/overlap2.png)
 ### (ii)
+![](docs/overlap3.png)
+
 Note that
 $$\Delta_3(\Pi_\phi, |1\rangle\langle 1| \Pi_\psi)$$
 is computed as:<br>
@@ -22,3 +56,4 @@ We will now use the identity proven in part 4(a), along with the previously comp
 $$Z_w = \frac{\Delta_3(\Pi_\phi |0\rangle\langle 0| \Pi_\psi)}{\Delta_2(\Pi_\phi \Pi_\psi)} - \frac{\Delta_3(\Pi_\phi |1\rangle\langle 1| \Pi_\psi)}{\Delta_2(\Pi_\phi \Pi_\psi)}$$
 
 The result $Z_w$ can be computed directly using the above equation.
+![](docs/z.png)

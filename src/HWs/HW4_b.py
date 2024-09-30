@@ -56,6 +56,8 @@ def compute_and_plot_overlaps2(alphas):
     plt.ylabel(r'$| \langle \phi | \psi \rangle |^2$')
     plt.title('SWAP Test Overlap vs. $\\theta$')
     plt.grid(True)
+    plt.savefig("docs/overlap2.png")
+
     plt.show()
 
     return np.array(overlaps_2)
@@ -77,6 +79,8 @@ def compute_and_plot_overlaps3(alphas):
     plt.grid(True)
 
     # Show plot
+    plt.savefig("docs/overlap3.png")
+
     plt.show()
     return overlaps_3
 
@@ -90,6 +94,7 @@ def compute_and_plot_Z(overlaps_2, overlaps_3, alphas):
     plt.ylabel('Zw Values')
     plt.title('Plot of $Z_w$')
     plt.grid(True)
+    plt.savefig("docs/z.png")
     plt.show()
 
 
