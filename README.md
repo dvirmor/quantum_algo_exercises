@@ -16,7 +16,9 @@ The result from b is encoded to the circuit with simple operations, then to reco
 
 ## 1.d
 We can see that for j=2,6 the value is low, this is the excepted result from the original stage. 
+
 ![](docs/1_d.png)
+
 # 2
 ![](docs/pdf/1.jpg)
 ![](docs/pdf/2.jpg)
@@ -38,6 +40,7 @@ We can see that for j=2,6 the value is low, this is the excepted result from the
 ## 4.b
 ### (i)
 ![](docs/overlap2.png)
+
 ### (ii)
 ![](docs/overlap3.png)
 
