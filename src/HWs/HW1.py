@@ -2,9 +2,14 @@ from qiskit import transpile
 from qiskit.circuit.library import QFT
 from qiskit import QuantumCircuit
 from qiskit_ibm_runtime import QiskitRuntimeService
-
+from qiskit.visualization import plot_histogram
 
 def encode_phi_stage(circuit):
+    """
+    This circuit encode the stage 1/2(|1> + |7>)
+    With simple calculation we can see that applying this circuit create this stage.
+    For reconstruct the origin stage we will apply the inverse QFT on this stage.
+    """
     circuit.x(2)
     circuit.cx(0, 1)
     # Because qiskit
@@ -26,7 +31,7 @@ def run_qc_on_real_hardware(circuit, token):
     print(f">>> Job ID: {job.job_id()}")
 
 
-def run_1_d(token):
+def run_1_c(token):
     qc = QuantumCircuit(3, 3)
     encode_phi_stage(qc)
     combine_phi_with_inverse_qft(qc)
@@ -40,12 +45,12 @@ def plot_results(job_id, token):
         instance='jupiter/internal/default',
         token=token
     )
-    job = service.job('cssz9mpvkv50008gcz10')
-    job_result = job.result()
-    print(job_result)
+    job = service.job(job_id)
+    counts = job.result().get_counts()
+    plot_histogram(counts)
 
 
 if __name__ == '__main__':
     from src.main import credentials
-    # run_1_d(credentials.token) # Job ID: cvxg1zz22dfg008n21xg
-    plot_results(None, credentials.token)
+    # run_1_c(credentials.token) # Job ID: cvxg1zz22dfg008n21xg
+    plot_results("cvxg1zz22dfg008n21xg", credentials.token)
