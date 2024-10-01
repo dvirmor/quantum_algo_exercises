@@ -54,6 +54,7 @@ $\Delta_3(\Pi_\phi, |1\rangle\langle 1| \Pi_\psi)$ = $\text{Tr}(\Pi_\phi |1\rang
 = $\Delta_2(\Pi_\psi \Pi_\phi) - \Delta_3(\Pi_\phi |0\rangle\langle 0| \Pi_\psi)$ <br>
 
 Since the right-hand side has already been calculated, we can now compute the left-hand side directly without any further measurements.
+
 ### Answer
 Recall that $Z$ is defined as:
 
